@@ -1,8 +1,19 @@
 $primary-color: #444;
 $secondary-color: #eeae1a;
+$show-home-image:true;
+$home-image: url(../dist/img/background.jpg);
+$background-opacity:0.9;
 
 @mixin easeOut {
     transition: color 0.5s ease-out;
+}
+
+@mixin background {
+    @if $show-home-image {
+        &#bg-img {
+            background: $home-image;
+        }
+    }
 }
 
 * {
@@ -10,7 +21,8 @@ $secondary-color: #eeae1a;
 }
 
 body {
-    background-color: $primary-color;
+    @include background();
+    background: $primary-color;
     color:#fff;
     margin:0;
     height: 100%;
