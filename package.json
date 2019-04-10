@@ -1,0 +1,19 @@
+{
+  "name": "pragyes31.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragyes31/pragyes31.github.io.git"
+  },
+  "author": "Rahul Nayak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pragyes31/pragyes31.github.io/issues"
+  },
+  "homepage": "https://github.com/pragyes31/pragyes31.github.io#readme"
+}
