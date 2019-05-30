@@ -11,11 +11,22 @@
       line-height: 1;
       margin-bottom: 1rem;
     }
+    .about-info {
+      grid-template-areas: 
+      'bioimage'
+      'bio'
+      'job1'
+      'job2'
+      'job3';
+      grid-template-columns: 1fr;
+    }
+  }
+  .menu {
+      flex-direction: row;
   }
   
   ul.menu-nav,
   div.menu-branding {
-      float: none;
     width: 100%;
     min-height: 0;
     &.show {
