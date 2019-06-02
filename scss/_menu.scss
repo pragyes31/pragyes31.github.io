@@ -74,9 +74,10 @@
         &.show {
             transform:translate3d(0,0,0);
         }
-        .portrait-img {
-            height: 250px;
+        .portrait {
             width: 250px;
+            height: 250px;
+            background: $portrait;
             border:solid 3px $secondary-color;
             border-radius: 50%;
         }
