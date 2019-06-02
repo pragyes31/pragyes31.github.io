@@ -124,7 +124,7 @@ margin-bottom:20px;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0.7rem;
     img {
-        width: 100%;
+        width: 100%;    
         border: 3px #fff solid;
     }
     img:hover {
@@ -146,10 +146,10 @@ margin-bottom:20px;
         font-size: 2rem;
         border:3px #fff solid;
         padding: 1.5rem 2.5rem;
-        margin-bottom:3rem;
+        margin-bottom:5rem;
         @include easeOut;
         &:hover {
-            padding: 0.5rem 1.5rem;
+            padding: 0.5rem 1.5rem;;
             
         }
     }
