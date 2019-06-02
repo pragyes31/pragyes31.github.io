@@ -182,7 +182,7 @@ main {
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px; }
+  grid-gap: 0.7rem; }
   .projects img {
     width: 100%;
     border: 3px #fff solid; }
@@ -191,12 +191,52 @@ main {
     opacity: 0.5;
     transition: all 0.5s ease-out; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem; }
+
+.btn, .btn-dark, .btn-white {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-white:hover {
+    background: #eeae1a;
+    color: #444; }
+
+.btn-dark {
+  background-color: black;
+  color: #fff; }
+
+.btn-white {
+  background-color: #c4c4c4;
+  color: #333; }
+
 .main-footer {
   text-align: center;
   padding: 1rem;
   background: #2b2b2b;
   color: #777777;
   height: 60px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -209,11 +249,13 @@ main {
       grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
       grid-template-columns: 1fr; }
   .menu {
-    flex-direction: row; }
+    flex-direction: row;
+    flex-flow: column wrap; }
   ul.menu-nav,
   div.menu-branding {
-    width: 100%;
-    min-height: 0; }
+    width: 100vw;
+    min-height: 0;
+    flex-grow: 3; }
     ul.menu-nav.show,
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -223,10 +265,14 @@ main {
     font-size: 24px; }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0); }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; }
   .menu {
-    flex-direction: row; } }
+    flex-direction: row; }
+  .projects {
+    grid-template-columns: 1fr; } }
