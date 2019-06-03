@@ -186,6 +186,7 @@ main {
   grid-gap: 0.7rem; }
   .projects img {
     width: 100%;
+    height: 300px;
     border: 3px #fff solid; }
   .projects img:hover {
     border: 3px #eeae1a solid;
