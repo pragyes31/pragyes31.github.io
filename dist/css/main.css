@@ -242,7 +242,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .menu-branding .portrait {
-    background: url(../img/portrait-sm.jpg);
+    background: url(../img/portrait_sm.jpg);
     width: 150px;
     height: 150px; }
   main {
